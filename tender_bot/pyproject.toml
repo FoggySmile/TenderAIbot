@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tender-bot"
+version = "0.1.0"
+description = ""
+authors = ["Natalia Kuzmina <natakkuzmina@gmail.com>"]
+readme = "README.md"
+packages = [{include = "tender_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+bot = "tender_bot.scripts.bot:main"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
