@@ -74,6 +74,7 @@ def choose_tender_type(call):
     bot.send_message(call.message.chat.id, 'Выберите срок подачи заявок:', reply_markup=keyboard)
 
 selected_customer = None
+deadline = None
 
 @bot.callback_query_handler(func=lambda call: call.data in ['Неделя', 'Месяц', 'Больше месяца'])
 def choose_deadline(call):
