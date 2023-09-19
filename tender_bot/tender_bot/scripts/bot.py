@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot('6547518088:AAGmN6IT4KUfo6To9EhbwY5-OLo0j7aFHls')
+bot = telebot.TeleBot('Спросите автора')
 bot.user_data = {}
 
 @bot.message_handler(commands=['start'])
